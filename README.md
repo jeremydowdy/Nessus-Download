@@ -39,7 +39,7 @@ If your control panel is organized by category:
 Select uninstall a program
 Find the Nessus program
 Click Uninstall
-you may receive a pop up showing unistall progress, if that stalls, open task manager and expand the User Account Control (UAC) program shown and give it permission to make changes to your disc to allow the uninstall to complete
+**you may receive a pop up showing unistall progress, if that stalls, open task manager and expand the User Account Control (UAC) program shown and give it permission to make changes to your disc to allow the uninstall to complete**
 
 If you view control panel in small icons:
 
