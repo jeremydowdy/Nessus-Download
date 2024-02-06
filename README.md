@@ -20,7 +20,7 @@ Run the Installer:
 Once the download is complete, run the installer executable (.exe file for windows) that you downloaded. Follow the on-screen instructions to install Nessus on your system.
 
 Set Up Nessus:
-During the installation process, you may be prompted to configure settings and set up your Nessus account. Follow the prompts to complete the setup.
+During the installation process, you may be prompted to configure settings and set up your Nessus account. Follow the prompts to complete the setup. SAVE YOUR ACTIVATION KEY TO NOTEPAD FOR FUTURE REFRENCE
 
 Activate Nessus:
 After installation, you may need to activate Nessus using the license or activation key provided by Tenable druing setup in your browser. You will be prompted that the website isnt safe, go into advanced and continue to the site to complete setup. Follow the activation process to complete the setup. Initilization will take some time. For computers with low end processing power and memory, it would be best practice to run the initialization in the browser and have no other programs running until it completes to prevent thermal throttling and excessive wear on your components.
