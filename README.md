@@ -105,34 +105,38 @@ If Nessus was installed using dpkg, you can use the dpkg command to uninstall it
 
 ```bash
 sudo dpkg -r nessus
+```
 
 If that doesnt work you can run
 
+```bash
 sudo apt-get remove --purge nessus
-
+```
 Remember to run these commands with sudo to ensure you have the necessary permissions to uninstall the software. Also, please refer to the Nessus documentation or the specific instructions provided by Tenable, the company behind Nessus, for any special uninstallation procedures related to your specific installation.
 
 The exact command to uninstall Nessus from Linux can depend on how Nessus was installed and which package manager your Linux distribution uses. Assuming you installed Nessus using a package manager like dpkg (common in Debian-based systems like Ubuntu) or rpm (common in Red Hat-based systems like Fedora), here are general steps:
 
-Debian/Ubuntu-based Systems:
-If Nessus was installed using dpkg, you can use the dpkg command to uninstall it. Open a terminal and run:
-
-sudo dpkg -r nessus
-If that doesn't work, you might need to use apt to remove it:
-sudo apt-get remove --purge nessus
-
 Red Hat/Fedora-based Systems:
 If Nessus was installed using rpm, you can use the rpm command to uninstall it. Open a terminal and run:
-sudo rpm -e nessus
 
+```bash
+sudo rpm -e nessus
+```
 General Method:
 If you're unsure or the above commands don't work, you can try to locate the Nessus package name and then remove it. Use the following commands:
 
 For Debian/Ubuntu-based systems
+
+```bash
 sudo apt-get remove --purge $(dpkg -l | grep nessus | awk '{print $2}')
+```
 
 For Red Hat/Fedora-based systems
+
+```bash
 sudo yum remove nessus
+```
+
 Make sure to replace "nessus" with the actual package name if it's different.
 
 Remember to run these commands with sudo to ensure you have the necessary permissions to uninstall the software. Also, please refer to the Nessus documentation or the specific instructions provided by Tenable, the company behind Nessus, for any special uninstallation procedures related to your specific installation.
