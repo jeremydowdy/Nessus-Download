@@ -10,6 +10,9 @@ In most cases, you will need to create an account on the Tenable website or log 
 Download Nessus
 Once you have an account and are logged in, navigate to the download section and choose the appropriate version for the system you wish to install it to.
 
+**For Linux**
+To install via the terminal after downloading the installer package, use code **sudo dpkg -i Nessus-&lt;version&gt;-debian6_amd64.deb** (insert version you downloaded in _**&lt;version&gt;**_)
+
 Select the Platform:
 Choose the platform for which you want to download Nessus. Make sure to download the correct version based on your system architecture.
 
