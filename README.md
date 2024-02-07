@@ -1,4 +1,6 @@
 # Nessus-Download
+
+**For Windows**
 How to download Tenable Nessus
 Nessus Installation
 Select Nessus Version:
@@ -9,9 +11,6 @@ In most cases, you will need to create an account on the Tenable website or log 
 
 Download Nessus
 Once you have an account and are logged in, navigate to the download section and choose the appropriate version for the system you wish to install it to.
-
-**For Linux**
-To install via the terminal after downloading the installer package, use code **sudo dpkg -i Nessus-&lt;version&gt;-debian6_amd64.deb** (insert version you downloaded in _**&lt;version&gt;**_)
 
 Select the Platform:
 Choose the platform for which you want to download Nessus. Make sure to download the correct version based on your system architecture.
@@ -33,9 +32,54 @@ Once installed and activated, you can access Nessus through a web browser by ent
 
 Remember to refer to the official Tenable documentation or support resources for any specific details or updates related to Nessus installation.
 
-REMOVING NESSUS
+# **For Linux**
+**Download Nessus using curl**
 
-For Windows:
+1. **Visit the Nessus Download Page:**
+   Go to the [official Tenable Nessus download page](https://www.tenable.com/downloads/nessus) to get the URL for the version you want.
+
+2. **Right-click on the Download Button:**
+   On the Nessus download page, right-click on the download button for the version you want and copy the link address.
+
+3. **Use `curl` Command:**
+   Open your terminal or command prompt and use the following `curl` command to download Nessus.
+
+   Replace `<download_link>` with the actual link you copied.
+
+   ```bash
+   curl -o Nessus.tar.gz <download_link>
+
+   
+## Installing Nessus on Kali Linux
+
+1. **Register for Nessus:**
+   - Go to the [Tenable website](https://www.tenable.com/), register for an account, and obtain a license for Nessus.
+
+2. **Download Nessus:**
+   - Once registered and logged in, navigate to the download section and download the appropriate package for your operating system. For Kali Linux, you might look for a Debian or Ubuntu package.
+
+3. **Install Nessus:**
+   - Use the appropriate package manager to install Nessus. For Debian-based systems like Kali Linux, you would use the `dpkg` package manager.
+     ```bash
+     sudo dpkg -i Nessus-<version>-debian6_amd64.deb
+     ```
+     Replace `<version>` with the actual version number of the Nessus package you downloaded.
+
+4. **Start Nessus:**
+   - Start the Nessus service with the following command:
+     ```bash
+     sudo service nessusd start
+     ```
+
+5. **Access Nessus Web Interface:**
+   - Open a web browser and navigate to [https://localhost:8834](https://localhost:8834). Follow the on-screen instructions to set up Nessus, including creating an admin user and activating the license.
+
+Please note that the steps might vary slightly depending on the specific version of Nessus and Kali Linux that you are using. Additionally, Tenable's policies may change, so it's a good idea to check their official documentation for the most up-to-date information.
+
+
+# REMOVING NESSUS
+
+**For Windows:**
 
 If your control panel is organized by category:
 
@@ -50,7 +94,24 @@ Go to programs and features
 Select Nessus and unisntall
 If you have issues unisntalling view bold and italicized statement above
 
-Removing Nessus from Linux
+# Removing Nessus from Linux
+
+## Uninstalling Nessus from Linux
+
+The exact command to uninstall Nessus from Linux can depend on how Nessus was installed and which package manager your Linux distribution uses. Assuming you installed Nessus using a package manager like dpkg (common in Debian-based systems like Ubuntu) or rpm (common in Red Hat-based systems like Fedora), here are general steps:
+
+### Debian/Ubuntu-based Systems:
+If Nessus was installed using dpkg, you can use the dpkg command to uninstall it. Open a terminal and run:
+
+```bash
+sudo dpkg -r nessus
+
+If that doesnt work you can run
+
+sudo apt-get remove --purge nessus
+
+Remember to run these commands with sudo to ensure you have the necessary permissions to uninstall the software. Also, please refer to the Nessus documentation or the specific instructions provided by Tenable, the company behind Nessus, for any special uninstallation procedures related to your specific installation.
+
 The exact command to uninstall Nessus from Linux can depend on how Nessus was installed and which package manager your Linux distribution uses. Assuming you installed Nessus using a package manager like dpkg (common in Debian-based systems like Ubuntu) or rpm (common in Red Hat-based systems like Fedora), here are general steps:
 
 Debian/Ubuntu-based Systems:
@@ -58,12 +119,12 @@ If Nessus was installed using dpkg, you can use the dpkg command to uninstall it
 
 sudo dpkg -r nessus
 If that doesn't work, you might need to use apt to remove it:
-
 sudo apt-get remove --purge nessus
+
 Red Hat/Fedora-based Systems:
 If Nessus was installed using rpm, you can use the rpm command to uninstall it. Open a terminal and run:
-
 sudo rpm -e nessus
+
 General Method:
 If you're unsure or the above commands don't work, you can try to locate the Nessus package name and then remove it. Use the following commands:
 
@@ -75,3 +136,5 @@ sudo yum remove nessus
 Make sure to replace "nessus" with the actual package name if it's different.
 
 Remember to run these commands with sudo to ensure you have the necessary permissions to uninstall the software. Also, please refer to the Nessus documentation or the specific instructions provided by Tenable, the company behind Nessus, for any special uninstallation procedures related to your specific installation.
+
+
