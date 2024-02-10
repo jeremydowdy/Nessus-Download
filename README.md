@@ -2,7 +2,7 @@
 
 **For Windows**
 How to download Tenable Nessus
-Nessus Installation
+
 Select Nessus Version:
 Choose the version of Nessus that suits your needs (e.g., Nessus Professional, Nessus Home, etc.).
 
@@ -86,7 +86,8 @@ If your control panel is organized by category:
 Select uninstall a program
 Find the Nessus program
 Click Uninstall
-**you may receive a pop up showing unistall progress, if that stalls, open task manager and expand the User Account Control (UAC) program shown and give it permission to make changes to your disc to allow the uninstall to complete**
+
+_**you may receive a pop up showing unistall progress, if that stalls, open task manager and expand the User Account Control (UAC) program shown and give it permission to make changes to your disc to allow the uninstall to complete**_
 
 If you view control panel in small icons:
 
