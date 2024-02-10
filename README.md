@@ -6,10 +6,10 @@ How to download Tenable Nessus
 Select Nessus Version:
 Choose the version of Nessus that suits your needs (e.g., Nessus Professional, Nessus Home, etc.).
 
-Create an Account
+Create an Account:
 In most cases, you will need to create an account on the Tenable website or log in if you already have one.
 
-Download Nessus
+Download Nessus:
 Once you have an account and are logged in, navigate to the download section and choose the appropriate version for the system you wish to install it to.
 
 Select the Platform:
